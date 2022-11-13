@@ -1,4 +1,5 @@
 <?php
+
 namespace Deployer;
 
 require 'recipe/laravel.php';
@@ -13,9 +14,9 @@ add('writable_dirs', []);
 
 // Hosts
 
-host('ec2-52-15-237-95.us-east-2.compute.amazonaws.com')
-    ->set('remote_user', 'ec2-user')
-    ->set('deploy_path', '/home/ec2-user/app');
+host('ec2-3-131-151-107.us-east-2.compute.amazonaws.com')
+    ->set('remote_user', 'ubuntu')
+    ->set('deploy_path', '/var/www/html');
 
 // Hooks
 
